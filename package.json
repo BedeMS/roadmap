@@ -1,0 +1,23 @@
+{
+  "name": "visit-ethiopia",
+  "version": "1.0.0",
+  "description": "This project allows anyone who wants to visit Ethiopia to get a look at everything the country has to offer and find key pieces of information for whenthey do visit. ",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Bede Marcos",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@parcel/transformer-sass": "^2.0.0-nightly.622",
+    "babel-polyfill": "^6.26.0",
+    "parcel": "^2.0.0-beta.1",
+    "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "leaflet": "^1.7.1",
+    "uniqid": "^5.3.0"
+  }
+}

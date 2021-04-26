@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/css/main.css" />
+    <title>WebDev Roadmap</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="index.html"
+        ><img src="src/img/webdevLogoWhite.png" alt="Webdev Logo"
+      /></a>
+      <ul class="nav__list">
+        <li class="nav__list-item"><a href="about.html">About</a></li>
+        <li class="nav__list-item">
+          <a href="webdev.html">What is Web Development</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="roadmap.html">Create Roadmap</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section class="roadmap__form">
+        <div class="roadmap__name">
+          <p class="forName">Name:</p>
+          <input type="text" id="name" />
+        </div>
+        <div class="roadmap__path">
+          <p class="forPath">Path:</p>
+          <div class="roadmap__path-info">
+            <p>
+              The shorter your timeline the more expensive, because you should
+              be willing to spend on courses instead of spending hours and hours
+              digging for videos.
+            </p>
+            <select class="btn btn-rnd" name="pathChoices" id="pathChoices">
+              <option value="frontEnd">Front-End</option>
+              <option value="backEnd">Back-End</option>
+              <option value="fullStack">Full Stack</option>
+            </select>
+            <!-- <div class="choices">
+              <button class="btn btn-rnd frontendBtn" value="frontEnd">
+                Front-End
+              </button>
+              <button class="btn btn-rnd backendBtn" value="backEnd">
+                Back-End
+              </button>
+              <button class="btn btn-rnd fullstackBtn" value="fullStack">
+                Full Stack
+              </button>
+            </div> -->
+            <p class="path__help">Not Sure or Don't Know? Click Here</p>
+          </div>
+        </div>
+        <div class="paths">
+          <div class="frontend">
+            <h1 class="frontend__title">What is Front-End</h1>
+            <p class="frontend__desc">
+              You will be working with the "client" (front) side of the
+              application. This has to do with how your design and code makes
+              the users interaction with the app enjoyable, smooth and easy. All
+              the content you see on the internet when you scroll and click are
+              probably done by the FE developer.
+            </p>
+            <p class="frontend__desc">
+              When a user enters the wrong credit card info, how do you inform
+              the user? Make the form red, display a message or animation.
+            </p>
+            <p class="frontend__desc">
+              Ex: The animations, 3D canvas, color transitions.
+            </p>
+            <p class="frontend__desc">
+              *Even if you start here, you can go to back-end after. Transition
+              will be easy b/c the concepts are similar.
+            </p>
+          </div>
+          <div class="backend">
+            <h1 class="backend__title">What is Back-end?</h1>
+            <p class="backend__desc">
+              As a user, we're usually creating, deleting, editing or requesting
+              for things all the time on the internet. These interactions are
+              made to look good on the front for the user while the back-end is
+              actually performing these functionalities.
+            </p>
+            <p class="backend__desc">
+              This involves you working behind the scene. If a user tries to log
+              in but gives the wrong password, your work in the back-end will
+              verify the data and send a message to the front letting the user
+              know their password was wrong.
+            </p>
+            <p class="backend__desc">
+              You'll be working on the efficiency of the application and
+              functionality. <br />
+              You will handle user data, network system, server and more
+              powerful items.
+            </p>
+          </div>
+          <div class="fullstack">
+            <h1 class="fullstack__title">Front + Back = Full Stack</h1>
+            <p class="fullstack__desc">
+              Please understand: while this is amazing, front-end or back-end on
+              their own are large stacks. They are sufficient on their own. You
+              can be a creator or employed with either or. Pick what you think
+              you'll enjoy working on and once you've mastered that then you
+              should move on to the next.
+            </p>
+            <p class="fullstack__desc">
+              Full stack is definitely doable but requires more time, budget and
+              patience.
+            </p>
+          </div>
+        </div>
+        <div class="roadmap__timeline">
+          <p class="forTimeline">Timeline:</p>
+          <div class="roadmap__timeline-info">
+            <p>3-6 months would require full time commitment</p>
+            <div class="choices">
+              <button class="btn btn-rnd threeMonths" value="3">
+                3 Months
+              </button>
+              <button class="btn btn-rnd sixMonths" value="6">6 Months</button>
+              <button class="btn btn-rnd sixPlusMonths" value="6+">
+                6 Months+
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="roadmap__budget">
+          <p class="forBudget">Budget:</p>
+          <div class="roadmap__budget-info">
+            <p>Do you need all your budget at once? No</p>
+            <div class="choices">
+              <button class="btn btn-rnd">$ 100</button>
+              <button class="btn btn-rnd">$ 200</button>
+              <button class="btn btn-rnd">$ 300</button>
+            </div>
+          </div>
+        </div> -->
+        <button type="button" class="btn btn-red btn-rnd roadmapSubmit">
+          Submit
+        </button>
+      </section>
+      <!-- <div class="paths">
+        <div class="frontend">
+          <h1 class="frontend__title">What is Front-End</h1>
+          <p class="frontend__desc">
+            You will be working with the "client" (front) side of the
+            application. This has to do with how your design and code makes the
+            users interaction with the app enjoyable, smooth and easy. All the
+            content you see on the internet when you scroll and click are
+            probably done by the FE developer.
+          </p>
+          <p class="frontend__desc">
+            When a user enters the wrong credit card info, how do you inform the
+            user? Make the form red, display a message or animation.
+          </p>
+          <p class="frontend__desc">
+            Ex: The animations, 3D canvas, color transitions.
+          </p>
+          <p class="frontend__desc">
+            *Even if you start here, you can go to back-end after. Transition
+            will be easy b/c the concepts are similar.
+          </p>
+        </div>
+        <div class="backend">
+          <h1 class="backend__title">What is Back-end?</h1>
+          <p class="backend__desc">
+            As a user, we're usually creating, deleting, editing or requesting
+            for things all the time on the internet. These interactions are made
+            to look good on the front for the user while the back-end is
+            actually performing these functionalities.
+          </p>
+          <p class="backend__desc">
+            This involves you working behind the scene. If a user tries to log
+            in but gives the wrong password, your work in the back-end will
+            verify the data and send a message to the front letting the user
+            know their password was wrong.
+          </p>
+          <p class="backend__desc">
+            You'll be working on the efficiency of the application and
+            functionality. <br />
+            You will handle user data, network system, server and more powerful
+            items.
+          </p>
+        </div>
+        <div class="fullstack">
+          <h1 class="fullstack__title">Front + Back = Full Stack</h1>
+          <p class="fullstack__desc">
+            Please understand: while this is amazing, front-end or back-end on
+            their own are large stacks. They are sufficient on their own. You
+            can be a creator or employed with either or. Pick what you think
+            you'll enjoy working on and once you've mastered that then you
+            should move on to the next.
+          </p>
+          <p class="fullstack__desc">
+            Full stack is definitely doable but requires more time, budget and
+            patience.
+          </p>
+        </div>
+      </div> -->
+      <section class="roadmap">
+        <h1 class="roadmap__title">Front-End</h1>
+        <div class="roadmap__box">
+          <h1 class="roadmap__box-title">HTML & CSS</h1>
+          <p class="roadmap__box-timeline">Timeline: 2-4 Weeks</p>
+          <p class="roadmap__box-instructions">
+            Instructions: <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sint
+            possimus aliquam, itaque assumenda distinctio voluptates dolorum
+            totam, dicta, minima natus nam vero nemo ut culpa consectetur
+            nostrum quaerat. Iusto dolor, quis magnam sit architecto eaque fugit
+            eveniet vel natus repellat aperiam, obcaecati, placeat expedita cum
+            nostrum cumque voluptatum accusamus.
+          </p>
+          <div class="roadmap__box-courses">
+            <p>Courses:</p>
+            <div class="courses">
+              <div class="course__box course-required">
+                <img src="/src/img/webdevLogoWhite.png" alt="Course name" />
+                <a href="#" class="course__box-title">Link Title</a>
+              </div>
+              <div class="course__box course-rec">
+                <img src="/src/img/webdevLogoWhite.png" alt="Course name" />
+                <a href="#" class="course__box-title">Link Title</a>
+              </div>
+              <div class="course__box">
+                <img src="/src/img/webdevLogoWhite.png" alt="Course name" />
+                <a href="#" class="course__box-title">Link Title</a>
+              </div>
+            </div>
+          </div>
+          <div class="roadmap__box-articles">
+            <p>Articles:</p>
+            <div class="articles">
+              <a href="#" class="article__link">Article One</a>
+              <a href="#" class="article__link">Article One</a>
+              <a href="#" class="article__link">Article One</a>
+              <a href="#" class="article__link">Article One</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <h1 class="message">
+        I wish you nothing but the Best. Keep focused and work hard to create a
+        good future for yourself.
+      </h1>
+    </main>
+    <script src="/src//js/controller.js"></script>
+  </body>
+</html>

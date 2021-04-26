@@ -1,0 +1,46 @@
+.btn {
+  padding: 3rem 4rem;
+  background-color: $color-dark-2;
+  color: $color-light-1;
+  @include fontMd;
+  font-weight: 500;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  outline: none;
+  z-index: 10;
+
+  &::before {
+    width: 0;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $color-light-1;
+    transition: all 0.5s;
+  }
+
+  &:hover::before {
+    opacity: 0.4;
+    width: 100%;
+  }
+}
+
+.btn-rnd {
+  border-radius: 13px;
+  font-weight: 600;
+
+  &::before {
+    border-radius: 13px;
+  }
+}
+
+.btn-red {
+  background-color: $color-dark-1;
+}
+
+.btn-active {
+  background-color: $color-light-2;
+  color: #000000;
+}

@@ -1,0 +1,108 @@
+.webdev {
+  &__box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    margin-bottom: 4rem;
+
+    &-title {
+      color: $color-dark-1;
+      @include fontLg;
+      font-weight: 500;
+      margin-bottom: 3rem;
+    }
+
+    &-desc {
+      color: $color-light-1;
+      @include fontMd;
+    }
+
+    .process {
+      width: 80%;
+      margin: 0 auto;
+      color: $color-dark-2;
+      @include fontMd;
+      font-weight: 500;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .arrow {
+        color: $color-light-1;
+        font-size: 9rem;
+      }
+
+      .process-active {
+        background-color: $color-light-1;
+      }
+
+      &__circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20rem;
+        width: 20rem;
+        border-radius: 50%;
+        background-color: $color-light-2;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          color: $color-dark-1;
+        }
+      }
+    }
+
+    &-list {
+      color: $color-light-1;
+      @include fontMd;
+      li {
+        margin: 2rem auto;
+      }
+    }
+  }
+
+  .process__answer {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    margin: 3rem auto;
+    text-align: center;
+
+    .testLaunch,
+    .maintain,
+    .idea__img,
+    .code__img,
+    .design__img {
+      opacity: 0;
+      height: 0;
+    }
+
+    .testLaunch {
+      //   height: 100%;
+      * {
+        margin: 3rem auto;
+      }
+      p {
+        color: $color-light-1;
+        @include fontMd;
+        font-weight: 600;
+      }
+      h1 {
+        color: $color-dark-1;
+        @include fontXl;
+      }
+    }
+    .maintain {
+      //   height: 100%;
+
+      * {
+        margin: 3rem auto;
+      }
+      color: $color-light-1;
+      @include fontMd;
+    }
+  }
+}

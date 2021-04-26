@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/sass/main.scss" />
+
+    <title>WebDev Roadmap</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="index.html"
+        ><img src="src/img/webdevLogoWhite.png" alt="Webdev Logo"
+      /></a>
+      <ul class="nav__list">
+        <li class="nav__list-item"><a href="about.html">About</a></li>
+        <li class="nav__list-item">
+          <a href="webdev.html">What is Web Development</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="roadmap.html">Create Roadmap</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="webdev">
+      <div class="webdev__box">
+        <h1 class="webdev__box-title">What</h1>
+        <p class="webdev__box-desc">
+          Web Development is the process used to make a simple static website or
+          a more complex web application.
+        </p>
+      </div>
+      <div class="webdev__box">
+        <h1 class="webdev__box-title">How</h1>
+        <div class="process">
+          <p id="ideaPhase" class="process__circle">Idea Analysis</p>
+          <span class="arrow"> &rarr;</span>
+          <p id="designPhase" class="process__circle">Design</p>
+          <span class="arrow"> &rarr;</span>
+          <p id="codePhase" class="process__circle">Code</p>
+          <span class="arrow"> &rarr;</span>
+          <p id="launchPhase" class="process__circle">Test & Launch</p>
+          <span class="arrow"> &rarr;</span>
+          <p id="maintainPhase" class="process__circle">Maintain</p>
+        </div>
+        <div class="process__answer">
+          <img
+            class="idea__img"
+            src="/src/img/webAnalysis.png"
+            alt="Idea Analysis"
+          />
+          <img
+            class="design__img"
+            src="/src/img/webDesign.png"
+            alt="Design Process"
+          />
+          <img
+            class="code__img"
+            src="/src/img/webCode.png"
+            alt="Coding Process"
+          />
+          <div class="testLaunch">
+            <p>Launch Beta Version</p>
+            <p>-Test and Debug</p>
+            <p>Make Final Changes</p>
+            <h1>LAUNCH</h1>
+          </div>
+          <ul class="maintain">
+            <li>As with life, everything has to be maintained</li>
+            <li>- Check for updates our project may need</li>
+            <li>- Monitor for errors</li>
+            <li>- Review ongoing feedback</li>
+          </ul>
+        </div>
+      </div>
+      <div class="webdev__box">
+        <h1 class="webdev__box-title">Why</h1>
+        <ul class="webdev__box-list">
+          <li>Ever growing field: From Web to App</li>
+          <li>Entry Level Skill Requirement that opens many doors</li>
+          <li>Jobs in demand: Shortage of supply</li>
+          <li>Ability to create any Application</li>
+          <li>
+            Leads to more fields. This Technical skill is just the beginning
+          </li>
+        </ul>
+      </div>
+    </main>
+    <script src="/src/js/controller.js"></script>
+  </body>
+</html>

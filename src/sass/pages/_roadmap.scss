@@ -1,0 +1,235 @@
+.roadmap__form {
+  // border: 2px solid white;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .roadmap__name {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    p {
+      width: 40%;
+      @include fontMd;
+      color: $color-light-1;
+      text-align: left;
+    }
+    input {
+      width: 60%;
+      padding: 2rem 2rem;
+      border-radius: 13px;
+      @include fontMd;
+      outline: none;
+      border: none;
+      background-color: $color-light-3;
+    }
+  }
+  .roadmap__timeline,
+  .roadmap__budget,
+  .roadmap__path {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+
+    &-info {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+
+      p,
+      .path__help {
+        @include fontMd;
+        color: $color-light-1;
+        margin: 2rem auto;
+      }
+      .path__help {
+        font-weight: 600;
+        cursor: pointer;
+        &:hover {
+          color: $color-dark-2;
+        }
+      }
+      .closeDesc {
+        width: 25%;
+        margin: 2rem auto;
+        padding: 1rem 1rem;
+      }
+    }
+  }
+
+  .forTimeline,
+  .forBudget,
+  .forPath {
+    width: 40%;
+    @include fontMd;
+    color: $color-light-1;
+    text-align: left;
+  }
+
+  .choices {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  button.btn {
+    padding: 3rem 1rem;
+  }
+}
+
+.paths {
+  width: 150%;
+  // height: auto;
+  // display: flex;
+  justify-content: space-around;
+  color: #000000;
+  display: none;
+}
+
+.frontend,
+.backend,
+.fullstack {
+  width: 25%;
+  background-color: $color-light-1;
+  border-radius: 13px;
+  padding: 2rem;
+  text-align: left;
+
+  h1 {
+    @include fontMd;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    line-height: 1.5;
+    @include fontXs;
+    margin-bottom: 2rem;
+  }
+}
+
+.path-box {
+  display: flex;
+}
+
+// ROADMAP CSS STARTS HERE
+.roadmap {
+  width: 80%;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    @include fontXl;
+    color: $color-light-1;
+    font-weight: 500;
+  }
+}
+
+.roadmap__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  color: $color-light-1;
+
+  * {
+    margin-bottom: 2rem;
+  }
+
+  &-title {
+    @include fontLg;
+    font-weight: 500;
+  }
+  &-timeline,
+  &-instructions,
+  &-courses,
+  &-articles {
+    @include fontSm;
+    font-weight: 500;
+  }
+  &-instructions {
+    width: 50%;
+    color: $color-dark-1;
+    line-height: 1.5;
+  }
+  &-courses {
+    display: flex;
+    flex-direction: column;
+    .courses {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .course__box {
+        width: 30rem;
+        height: 100%;
+        margin-right: 4rem;
+        margin-bottom: 4rem;
+
+        img {
+          width: 30rem;
+          height: 30rem;
+          // border: 5px solid $color-light-1;
+        }
+
+        &-title {
+          @include fontMd;
+          font-weight: 600;
+          color: $color-light-1;
+
+          &:hover {
+            color: $color-light-3;
+          }
+        }
+
+        img.course-required {
+          border: 5px solid red;
+        }
+        img.course-rec {
+          border: 5px solid lightskyblue;
+        }
+      }
+    }
+  }
+  &-articles {
+    display: flex;
+    flex-direction: column;
+    .article__link {
+      @include fontMd;
+      font-weight: 600;
+      color: $color-light-1;
+      margin-right: 3rem;
+      text-decoration: underline;
+
+
+      &:hover {
+        color: $color-light-2;
+      }
+    }
+  }
+}
+
+.message {
+  @include fontLg;
+  font-weight: 800;
+  color: $color-light-3;
+  width: 80%;
+  margin: 4rem auto;
+  text-align: center;
+
+  &__userName {
+    color: $color-dark-1;
+  }
+}
