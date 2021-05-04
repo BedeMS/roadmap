@@ -88,7 +88,7 @@ export default function () {
   let linesArray = [];
 
   //this create all the lines we want
-  for (let i = 0; i < 50; i++) {
+  for (let i = 0; i < 75; i++) {
     let radius = 0.5;
     let x = Math.random() * (innerWidth - radius * 2) + radius;
     let y = Math.random() * (innerHeight - radius * 2) + radius;

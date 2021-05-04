@@ -139,9 +139,10 @@
   align-items: center;
   width: 80%;
   height: auto;
-  margin: 0 auto;
+  margin: 0 auto 0;
   text-align: center;
   color: $color-light-1;
+  border-bottom: 5px solid #ffffff;
 
   * {
     margin-bottom: 2rem;
@@ -159,7 +160,7 @@
     font-weight: 500;
   }
   &-instructions {
-    width: 50%;
+    width: 80%;
     color: $color-dark-1;
     line-height: 1.5;
   }
@@ -204,21 +205,40 @@
     }
   }
   &-articles {
+    width: 100%;
     display: flex;
     flex-direction: column;
+
+    .articles {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
     .article__link {
+      margin-bottom: 3rem;
+      width: 25%;
       @include fontMd;
       font-weight: 600;
       color: $color-light-1;
-      margin-right: 3rem;
+      // margin-right: 3rem;
       text-decoration: underline;
-
 
       &:hover {
         color: $color-light-2;
       }
     }
   }
+}
+
+.roadmap__box:not(:first-of-type) {
+  margin: 8rem auto 0;
+}
+
+.roadmap__section-title {
+  @include fontMd;
+  font-weight: 600;
 }
 
 .message {

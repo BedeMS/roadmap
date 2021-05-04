@@ -22,16 +22,6 @@ class CanvasView {
       lines().animate(true);
       this._current = "circles";
     }
-    // if (this._current === "circles") {
-    //   lines().animate(true);
-    //   circles().animateDots(false);
-    //   this._current = "lines";
-    // }
-    // else {
-    //   circles().animateDots(true);
-    //   lines().animate(false);
-    //   this._current = "circles";
-    // }
   }
 
   addHandlerRender() {

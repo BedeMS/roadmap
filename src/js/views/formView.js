@@ -69,25 +69,31 @@ class FormView extends View {
   }
 
   loopMarkUp(el, ind) {
+    if(el.courses.length === 0) return;
     return `
     <div class="roadmap__box">
       <h1 class="roadmap__box-title">${el.title}</h1>
-      <p class="roadmap__box-timeline">Timeline: ${el.timeline}</p>
+      <p class="roadmap__box-timeline">
+          <span class="roadmap__section-title">Timeline: </span>
+          ${el.timeline}
+      </p>
       <p class="roadmap__box-instructions">
-        Instructions: <br />
+        <span class="roadmap__section-title">Instructions:</span> <br />
         ${el.instructions}
       </p>
       <div class="roadmap__box-courses">
-        <p>Courses:</p>
+        <p class="roadmap__section-title">Courses:</p>
         <div class="courses">
           ${el.courses
-            .map((el) => {
+            .map((course) => {
               return `
             <div class="course__box">
-            <img src="${el.img}" class="${
-                el.isRequired ? "course-required" : ""
+            <img src="${course.img}" class="${
+                course.isRequired ? "course-required" : ""
               }"alt="Course name" />
-            <a href="${el.url}" class="course__box-title">${el.title}</a>
+            <a href="${course.url}" target="_blank" class="course__box-title">${
+                course.title
+              }</a>
           </div>
             `;
             })
@@ -95,12 +101,12 @@ class FormView extends View {
         </div>
       </div>
       <div class="roadmap__box-articles">
-        <p>Articles:</p>
+        <p class="roadmap__section-title">Articles:</p>
         <div class="articles">
         ${el.articles
           .map((el) => {
             return `
-            <a href="${el.url}" class="article__link">${el.title}</a>
+            <a href="${el.url}" target="_blank" class="article__link">${el.title}</a>
           `;
           })
           .join("")}
@@ -121,7 +127,7 @@ class FormView extends View {
 
   articlesLoop(el) {
     return `
-    <a href="${el.url}" class="article__link">${el.title}</a>
+    <a target="_blank" href="${el.url}" class="article__link" rel="noopener noreferrer">${el.title}</a>
     `;
   }
 }
