@@ -36,7 +36,8 @@ export default [
         isRequired: false,
         source: "udemy",
         timeline: ["6", "6+"],
-        img: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+        img:
+          "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
         cost: 0,
       },
     ],
@@ -102,7 +103,7 @@ export default [
         source: "udemy",
         timeline: ["6", "6+"],
         img:
-          "https://i.ytimg.com/an_webp/UB1O30fR-EE/mqdefault_6s.webp?du=3000&sqp=CM7O74IG&rs=AOn4CLAkKXwKWPm9Vv-0B0yY88B0ivQvAg",
+          "https://www.secret-source.eu/wp-content/uploads/2017/11/node-js-logo.jpg",
         cost: 0,
       },
     ],
@@ -210,7 +211,7 @@ export default [
         cost: 0,
       },
       {
-        title: "Exploring Docker Part 2",
+        title: "Exploring Docker Part 1",
         id: uniqid(),
         url: "https://www.youtube.com/watch?v=Kyx2PsuwomE",
         isRequired: false,

@@ -60,10 +60,10 @@ class FormView extends View {
 
   createMarkUp(data) {
     const [formInfo, roadMap] = data;
-
+    console.log(formInfo);
     return `
     <h1 class="roadmap__title">${formInfo.title}</h1>
-    ${roadMap.map(this.loopMarkUp).join("")}
+    ${this.checkFullStack(formInfo, roadMap)}
     <h1 class="message">
       Hi <span class="message__userName">${
         formInfo.userName
@@ -73,6 +73,18 @@ class FormView extends View {
     `;
   }
 
+  // ${roadMap.map(this.loopMarkUp).join("")}
+
+  checkFullStack(formInfo, roadMap) {
+    if (formInfo.title === "Full Stack" && formInfo.time === "3") {
+      return `<h1 class="message"> Full Stack Development requires at a minimum 6 months. 
+      It's recommended that you take 6+ months. </h1> `;
+    } else {
+      return roadMap.map(this.loopMarkUp).join("");
+    }
+  }
+
+  // loops through each section in Stack. ex: html, css ...
   loopMarkUp(el, ind) {
     if (el.courses.length === 0) return;
     return `

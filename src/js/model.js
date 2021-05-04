@@ -14,7 +14,7 @@ export const getUserInput = function (input) {
   state.currentTime = userInput.time;
   state.userName = userInput.userName;
 
-  console.log(state);
+  // console.log(state);
 };
 
 //based on the state, get the correct path
@@ -25,6 +25,7 @@ export const getPath = function () {
   data.push({
     title: pathName(),
     userName: state.userName,
+    time: state.currentTime,
   });
 
   const roadMap = path.map((el) => {
