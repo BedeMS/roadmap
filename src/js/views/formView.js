@@ -29,6 +29,11 @@ class FormView extends View {
           userData.path = this.roadmapPath.value;
           userData.time = this.roadmapTime.value;
           handler(userData);
+          window.scrollTo({
+            left: 0,
+            top: 900,
+            behavior: "smooth",
+          });
         }
       });
     });
@@ -60,16 +65,16 @@ class FormView extends View {
     <h1 class="roadmap__title">${formInfo.title}</h1>
     ${roadMap.map(this.loopMarkUp).join("")}
     <h1 class="message">
-      I wish you, <span class="message__userName">${
+      Hi <span class="message__userName">${
         formInfo.userName
-      }</span> ,nothing but the Best. Keep focused and work hard to create a
+      }</span>. I wish you nothing but the Best. Keep focused and work hard to create a
       good future for yourself.
     </h1>
     `;
   }
 
   loopMarkUp(el, ind) {
-    if(el.courses.length === 0) return;
+    if (el.courses.length === 0) return;
     return `
     <div class="roadmap__box">
       <h1 class="roadmap__box-title">${el.title}</h1>
