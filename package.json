@@ -2,10 +2,10 @@
   "name": "visit-ethiopia",
   "version": "1.0.0",
   "description": "This project allows anyone who wants to visit Ethiopia to get a look at everything the country has to offer and find key pieces of information for whenthey do visit. ",
-  "main": "index.html",
+  "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "author": "Bede Marcos",
   "license": "ISC",
