@@ -60,7 +60,7 @@ class FormView extends View {
 
   createMarkUp(data) {
     const [formInfo, roadMap] = data;
-    console.log(formInfo);
+    // console.log(formInfo);
     return `
     <h1 class="roadmap__title">${formInfo.title}</h1>
     ${this.checkFullStack(formInfo, roadMap)}
