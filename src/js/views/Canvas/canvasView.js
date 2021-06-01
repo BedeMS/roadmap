@@ -12,7 +12,6 @@ class CanvasView {
 
   _animate() {
     if (!this._parentElement) return;
-    // lines().animate(true);
     if (this._current === "circles") {
       lines().animate(false);
       circles().animateDots(true);

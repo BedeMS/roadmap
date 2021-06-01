@@ -11,7 +11,6 @@ const controlRoadmap = function (input) {
 
   // get correct data to render
   formView.render(model.getPath());
-  // formView.createMarkUp(model.getPath());
 };
 
 const init = function () {
