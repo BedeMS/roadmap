@@ -107,8 +107,8 @@ class FormView extends View {
             <div class="course__box">
             <img src="${course.img}" class="${
                 course.isRequired ? "course-required" : ""
-              }"alt="Course name" />
-            <a href="${course.url}" target="_blank" class="course__box-title">${
+              }"alt="${course.title}" />
+            <a aria-label="Course: ${course.title}" href="${course.url}" target="_blank" class="course__box-title">${
                 course.title
               }</a>
           </div>
@@ -123,7 +123,7 @@ class FormView extends View {
         ${el.articles
           .map((el) => {
             return `
-            <a href="${el.url}" target="_blank" class="article__link">${el.title}</a>
+            <a aria-label="Article: ${el.title}" href="${el.url}" target="_blank" class="article__link">${el.title}</a>
           `;
           })
           .join("")}

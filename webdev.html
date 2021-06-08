@@ -43,17 +43,45 @@
       <div class="webdev__box">
         <h1 class="webdev__box-title">How</h1>
         <div class="process">
-          <button id="ideaPhase" class="process__circle">Idea Analysis</button>
+          <button
+            aria-describedby="ideaAnalysis"
+            id="ideaPhase"
+            class="process__circle"
+          >
+            Idea Analysis
+          </button>
           <span class="arrow"> &rarr;</span>
-          <button id="designPhase" class="process__circle">Design</button>
+          <button
+            aria-describedby="designProcess"
+            id="designPhase"
+            class="process__circle"
+          >
+            Design
+          </button>
           <span class="arrow"> &rarr;</span>
-          <button id="codePhase" class="process__circle">Code</button>
+          <button
+            aria-label="Take the plan and bring to life with Code"
+            id="codePhase"
+            class="process__circle"
+          >
+            Code
+          </button>
           <span class="arrow"> &rarr;</span>
-          <button id="launchPhase" class="process__circle">
+          <button
+            aria-describedby="testLaunch"
+            id="launchPhase"
+            class="process__circle"
+          >
             Test & Launch
           </button>
           <span class="arrow"> &rarr;</span>
-          <button id="maintainPhase" class="process__circle">Maintain</button>
+          <button
+            aria-describedby="maintain"
+            id="maintainPhase"
+            class="process__circle"
+          >
+            Maintain
+          </button>
         </div>
         <div class="process__answer">
           <img
@@ -71,15 +99,15 @@
           <img
             class="code__img"
             src="/src/img/webCode.png"
-            alt="Take plan and bring to life with Code"
+            alt="Take the plan and bring to life with Code"
           />
-          <div class="testLaunch">
-            <p>Launch Beta Version</p>
-            <p>-Test and Debug</p>
-            <p>Make Final Changes</p>
+          <div id="testLaunch" class="testLaunch">
+            <p>Launch Beta Version.</p>
+            <p>-Test and Debug.</p>
+          <p>Make Final Changes.</p>
             <h1>LAUNCH</h1>
           </div>
-          <ul class="maintain">
+          <ul id="maintain" class="maintain">
             <li>As with life, everything has to be maintained</li>
             <li>- Check for updates our project may need</li>
             <li>- Monitor for errors</li>

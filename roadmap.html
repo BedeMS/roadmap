@@ -36,7 +36,7 @@
       <section class="roadmap__form">
         <div class="roadmap__name">
           <p class="forName">Name:</p>
-          <input type="text" id="userName" />
+          <input aria-label="Enter full name" type="text" id="userName" />
         </div>
         <div class="roadmap__path">
           <p class="forPath">Path:</p>
@@ -46,13 +46,24 @@
               be willing to spend on courses instead of spending hours and hours
               digging for videos.
             </p>
-            <select class="btn btn-rnd" name="pathChoices" id="pathChoices">
-              <option value="frontEnd">Front-End</option>
-              <option value="backEnd">Back-End</option>
-              <option value="fullStack">Full Stack</option>
+            <select
+              aria-label="Select the path you want to take as a developer"
+              class="btn btn-rnd"
+              name="pathChoices"
+              id="pathChoices"
+            >
+              <option aria-selected="true" value="frontEnd">Front-End</option>
+              <option aria-selected="false" value="backEnd">Back-End</option>
+              <option aria-selected="false" value="fullStack">
+                Full Stack
+              </option>
             </select>
 
-            <a href="#" class="path__help"
+            <a
+              href="#"
+              role="button"
+              aria-label="Click here to learn more about path choices"
+              class="path__help"
               >Not Sure or Don't Know? Click Here</a
             >
           </div>
@@ -119,14 +130,24 @@
           <p class="forTimeline">Timeline:</p>
           <div class="roadmap__timeline-info">
             <p>3-6 months would require full time commitment</p>
-            <select class="btn btn-rnd" name="timeChoices" id="timeChoices">
+            <select
+              aria-label="Select the amount of months you want to study for"
+              class="btn btn-rnd"
+              name="timeChoices"
+              id="timeChoices"
+            >
               <option value="3">3 Months</option>
               <option value="6">6 Months</option>
               <option value="6+">6 Months +</option>
             </select>
           </div>
         </div>
-        <button type="button" class="btn btn-red btn-rnd" id="roadmapSubmit">
+        <button
+          aria-label="Show my personalized roadmap"
+          type="button"
+          class="btn btn-red btn-rnd"
+          id="roadmapSubmit"
+        >
           Show Roadmap
         </button>
       </section>
