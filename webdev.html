@@ -13,16 +13,26 @@
         ><img src="src/img/webdevLogoWhite.png" alt="Webdev Logo"
       /></a>
       <ul class="nav__list">
-        <li class="nav__list-item"><a href="about.html">About</a></li>
         <li class="nav__list-item">
-          <a href="webdev.html">What is Web Development</a>
+          <a aria-label="Learn more about this website" href="about.html"
+            >About</a
+          >
         </li>
         <li class="nav__list-item">
-          <a href="roadmap.html">Create Roadmap</a>
+          <a aria-label="What is web development?" href="webdev.html"
+            >What is Web Development</a
+          >
+        </li>
+        <li class="nav__list-item">
+          <a
+            aria-label="Create Roadmap for my self-taught web developer Path"
+            href="roadmap.html"
+            >Create Roadmap</a
+          >
         </li>
       </ul>
     </nav>
-    <main class="webdev">
+    <main role="main" class="webdev">
       <div class="webdev__box">
         <h1 class="webdev__box-title">What</h1>
         <p class="webdev__box-desc">
@@ -39,7 +49,9 @@
           <span class="arrow"> &rarr;</span>
           <button id="codePhase" class="process__circle">Code</button>
           <span class="arrow"> &rarr;</span>
-          <button id="launchPhase" class="process__circle">Test & Launch</button>
+          <button id="launchPhase" class="process__circle">
+            Test & Launch
+          </button>
           <span class="arrow"> &rarr;</span>
           <button id="maintainPhase" class="process__circle">Maintain</button>
         </div>
@@ -47,17 +59,19 @@
           <img
             class="idea__img"
             src="/src/img/webAnalysis.png"
-            alt="Idea Analysis"
+            alt="Create plan for the project by using Idea Analysis"
+            aria-describedby="ideaAnalysis"
           />
           <img
             class="design__img"
             src="/src/img/webDesign.png"
             alt="Design Process"
+            aria-describedby="designProcess"
           />
           <img
             class="code__img"
             src="/src/img/webCode.png"
-            alt="Coding Process"
+            alt="Take plan and bring to life with Code"
           />
           <div class="testLaunch">
             <p>Launch Beta Version</p>
@@ -71,6 +85,18 @@
             <li>- Monitor for errors</li>
             <li>- Review ongoing feedback</li>
           </ul>
+        </div>
+        <div class="image__descriptions">
+          <p id="ideaAnalysis">
+            As the initial phase of a web development project, it is important
+            to plan around the idea and its requirements by doing research and
+            communicating with clients.
+          </p>
+          <p id="designProcess">
+            After the research, we have to create designs and layouts to get one
+            step closer to our idea. This phase is an important step that often
+            overlooked.
+          </p>
         </div>
       </div>
       <div class="webdev__box">

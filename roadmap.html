@@ -8,21 +8,31 @@
     <title>WebDev Roadmap</title>
   </head>
   <body>
-    <nav class="nav">
+    <nav role="navigation" class="nav">
       <a href="index.html"
         ><img src="src/img/webdevLogoWhite.png" alt="Webdev Logo"
       /></a>
       <ul class="nav__list">
-        <li class="nav__list-item"><a href="about.html">About</a></li>
         <li class="nav__list-item">
-          <a href="webdev.html">What is Web Development</a>
+          <a aria-label="Learn more about this website" href="about.html"
+            >About</a
+          >
         </li>
         <li class="nav__list-item">
-          <a href="roadmap.html">Create Roadmap</a>
+          <a aria-label="What is web development?" href="webdev.html"
+            >What is Web Development</a
+          >
+        </li>
+        <li class="nav__list-item">
+          <a
+            aria-label="Create Roadmap for my self-taught web developer Path"
+            href="roadmap.html"
+            >Create Roadmap</a
+          >
         </li>
       </ul>
     </nav>
-    <main>
+    <main role="main">
       <section class="roadmap__form">
         <div class="roadmap__name">
           <p class="forName">Name:</p>
